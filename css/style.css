@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  animation: animate 20s ease-in-out infinite;
+  background-size: cover;
+}
+
+@keyframes animate {
+  0%,100%{
+    background-image: url(https://tonikawa.com/assets/images/common/story/ep08/img_1_l.jpg);
+  }
+  25%{
+    background-image: url(https://tonikawa.com/assets/images/common/story/ep08/img_4_l.jpg);
+  }
+  50%{
+    background-image: url(https://tonikawa.com/assets/images/common/story/ep08/img_3_l.jpg);
+  }
+  75%{
+    background-image: url(https://tonikawa.com/assets/images/common/story/ep08/img_6_l.jpg);
+  }
+}
+
+.pic {
+  font-size: 7.5em;
+  border: 5px solid transparent;
+  outline: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 10px 20px 30px black;
+}
+
+.wrapper {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 10px 20px 30px black;
+}
+
+.ani {
+  width: 100px;
+  height: 100px;
+  color: antiquewhite;
+  font-size: 7.5em;
+  border: 5px solid transparent;
+  outline: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 10px 20px 40px black;
+}
+
+h2 {
+  font-size: 2em;
+  color:brown;
+  margin: 15px 0;
+}
+
+.btn-group{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+button{
+  position: absolute;
+  width: 150px;
+  height: inherit;
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 2px solid brown;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:nth-child(1) {
+  margin-left: -200px;
+  background: brown;
+}
+
+button:nth-child(2) {
+  margin-right: -200px;
+  color: brown;
+}
+
+audio {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 50px;
+}
